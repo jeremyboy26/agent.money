@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AgentMoney — Real Ways People Make & Save Money with AI Agents</title>
+  <meta name="description" content="The largest free directory of proven AI agent use cases that actually make or save money. Updated daily. Steal the prompts.">
+  <meta name="keywords" content="AI agents, make money with AI, side hustle agents, agent use cases, AI money, autonomous agents">
+  <link rel="canonical" href="https://agentmoney.ai/">
+  <meta property="og:title" content="AgentMoney — Make Money with AI Agents">
+  <meta property="og:description" content="Real use cases, real results, ready-to-steal prompts. Updated daily.">
+  <meta property="og:type" content="website">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+  <!-- Sponsor Bar -->
+  <div class="sponsor-bar" id="sponsor-bar">
+    <div class="container sponsor-inner">
+      <span class="sponsor-label">Sponsored by</span>
+      <a href="/sponsor" class="sponsor-link">Your AI tool here — $500/week →</a>
+    </div>
+  </div>
+
+  <!-- Header -->
+  <header class="header">
+    <div class="container header-inner">
+      <a href="/" class="logo">
+        <span class="logo-icon">$</span>
+        <span class="logo-text">AgentMoney</span>
+      </a>
+      <nav class="nav">
+        <a href="#use-cases">Use Cases</a>
+        <a href="#categories">Categories</a>
+        <a href="/newsletter">Newsletter</a>
+        <a href="/sponsor" class="btn-sponsor">Sponsor</a>
+      </nav>
+      <button class="mobile-menu-btn" id="mobile-menu-btn" aria-label="Menu">☰</button>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <section class="hero">
+    <div class="container">
+      <div class="hero-content">
+        <h1>Real ways people are <span class="highlight">making & saving money</span> with AI agents</h1>
+        <p class="hero-sub">Free directory of proven use cases. Steal the prompts. Updated daily from X, Reddit, and the open web.</p>
+        
+        <div class="search-box">
+          <input type="text" id="search-input" placeholder="Search use cases... (e.g. trading, bills, leads)" autocomplete="off">
+          <button id="search-btn">Search</button>
+        </div>
+
+        <div class="hero-stats">
+          <div class="stat">
+            <span class="stat-num" id="total-cases">47</span>
+            <span class="stat-label">Money Use Cases</span>
+          </div>
+          <div class="stat">
+            <span class="stat-num">Daily</span>
+            <span class="stat-label">New Finds</span>
+          </div>
+          <div class="stat">
+            <span class="stat-num">Free</span>
+            <span class="stat-label">Forever</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Newsletter CTA -->
+  <section class="newsletter-cta">
+    <div class="container">
+      <div class="newsletter-box">
+        <div class="newsletter-text">
+          <h2>5 new money-making agent use cases every morning</h2>
+          <p>One email. Ready-to-steal prompts. Zero fluff.</p>
+        </div>
+        <form class="newsletter-form" id="newsletter-form">
+          <input type="email" placeholder="Enter your email" required>
+          <button type="submit">Get the Daily 5</button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- Categories -->
+  <section class="categories" id="categories">
+    <div class="container">
+      <h2 class="section-title">Browse by Money Category</h2>
+      <div class="category-grid">
+        <a href="#trading" class="category-card">
+          <span class="cat-icon">📈</span>
+          <h3>Trading & Investing</h3>
+          <p>Autonomous trading, portfolio agents, market research</p>
+        </a>
+        <a href="#side-hustles" class="category-card">
+          <span class="cat-icon">💼</span>
+          <h3>Side Hustles</h3>
+          <p>Freelance agents, content factories, micro-SaaS</p>
+        </a>
+        <a href="#bills" class="category-card">
+          <span class="cat-icon">💸</span>
+          <h3>Bills & Savings</h3>
+          <p>Negotiate bills, cancel subscriptions, find refunds</p>
+        </a>
+        <a href="#leads" class="category-card">
+          <span class="cat-icon">🎯</span>
+          <h3>Lead Gen & Sales</h3>
+          <p>Outbound agents, qualification, closing deals</p>
+        </a>
+        <a href="#content" class="category-card">
+          <span class="cat-icon">✍️</span>
+          <h3>Content for Profit</h3>
+          <p>Clipping, repurposing, newsletter engines</p>
+        </a>
+        <a href="#unclaimed" class="category-card">
+          <span class="cat-icon">🔍</span>
+          <h3>Unclaimed Money</h3>
+          <p>Find forgotten funds, tax refunds, insurance</p>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Use Cases -->
+  <section class="use-cases" id="use-cases">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">Latest Money-Making Use Cases</h2>
+        <div class="filters">
+          <button class="filter-btn active" data-filter="all">All</button>
+          <button class="filter-btn" data-filter="trading">Trading</button>
+          <button class="filter-btn" data-filter="side-hustles">Side Hustles</button>
+          <button class="filter-btn" data-filter="bills">Bills</button>
+          <button class="filter-btn" data-filter="leads">Leads</button>
+        </div>
+      </div>
+
+      <div class="use-case-grid" id="use-case-grid">
+        <!-- Use cases will be injected by JS -->
+      </div>
+    </div>
+  </section>
+
+  <!-- How it works -->
+  <section class="how-it-works">
+    <div class="container">
+      <h2 class="section-title">How AgentMoney Works</h2>
+      <div class="steps">
+        <div class="step">
+          <div class="step-num">1</div>
+          <h3>We scan the web daily</h3>
+          <p>X, Reddit, forums, newsletters — anywhere people share real agent results that made or saved money.</p>
+        </div>
+        <div class="step">
+          <div class="step-num">2</div>
+          <h3>We extract the gold</h3>
+          <p>Use case, exact results, the prompt that worked, which agent, and the original source.</p>
+        </div>
+        <div class="step">
+          <div class="step-num">3</div>
+          <h3>You copy & paste</h3>
+          <p>Steal the prompt, run it on your own agent, and start making money the same day.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="/" class="logo">
+            <span class="logo-icon">$</span>
+            <span class="logo-text">AgentMoney</span>
+          </a>
+          <p>The free directory of AI agent use cases that actually make or save money.</p>
+        </div>
+        <div class="footer-links">
+          <h4>Product</h4>
+          <a href="#use-cases">Use Cases</a>
+          <a href="#categories">Categories</a>
+          <a href="/newsletter">Newsletter</a>
+          <a href="/sponsor">Sponsor</a>
+        </div>
+        <div class="footer-links">
+          <h4>Submit</h4>
+          <a href="/submit">Submit a Use Case</a>
+          <a href="mailto:hello@agentmoney.ai">Contact</a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>© 2026 AgentMoney. Built to help you make money with agents.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="data.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
